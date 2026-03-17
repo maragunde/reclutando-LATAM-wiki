@@ -12,25 +12,25 @@ Hola! Si trabajas en recruitment y necesitas una mano, este es el espacio de Rec
 
 ---
 
-## 📓 [Blogs de reclutamiento](blogs.md)
+## 📓 [Blogs de reclutamiento](/recursos-dir/blogs.md)
 
-## 📖 [Cursos, libros y otros recursos](cursos.md)
+## 📖 [Cursos, libros y otros recursos](recursos-dir/cursos.md)
 
-## 📅 [Conferencias y Eventos](eventos.md)
+## 📅 [Conferencias y Eventos](recursos-dir/eventos.md)
 
-## 💰 [Vendors, ATS, agencias, y otros](vendors.md)
+## 💰 [Vendors, ATS, agencias, y otros](recursos-dir/vendors.md)
 
-## 💬 [Comunidades y grupos utiles](grupos.md)
+## 💬 [Comunidades y grupos utiles](recursos-dir/grupos.md)
 
-## 📫 [Newsletters](newsletters.md)
+## 📫 [Newsletters](recursos-dir/newsletters.md)
 
-## 🎧 [Podcasts](podcasts.md)
+## 🎧 [Podcasts](recursos-dir/podcasts.md)
 
-## 📈 [Reportes, stats, mercado](reportes.md)
+## 📈 [Reportes, stats, mercado](recursos-dir/reportes.md)
 
-## 📺 [Videos, entrevistas](videos.md)
+## 📺 [Videos, entrevistas](recursos-dir/videos.md)
 
-## 🛠️ [Herramientas, templates y productividad](tools.md)
+## 🛠️ [Herramientas, templates y productividad](recursos-dir/tools.md)
 
 ---
 
