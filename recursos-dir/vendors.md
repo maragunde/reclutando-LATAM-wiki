@@ -2,11 +2,20 @@
 
 #### 💼 Agencias de reclutamiento
 
+- [Talent Wind](https://talentwind.xyz/) - Contacto: Vicky Charra
+- [Conexion HR](http://conexion-hr.com/) - Contacto: Caro Maristany
+- [Grow UP HR](https://linktr.ee/growuphr) - Contacto: Clara Gioffre
+
 #### 📆 Organizacion de eventos
+
+- [Work Tec](https://worktec.com.ar/productora-eventos/) - Productora de eventos, muchas ferias de empleo
 
 #### 🎬 Productoras / Agencias de Mkt
 
+- [UV Agency](https://www.uv.agency/) - Contacto: Javier Severini (@jassu en Twitter)
+
 #### 💻 ATS y software de reclutamietno
+
 - [Workable](https://www.workable.com/) - ATS Enterprise / Mid Level
 - [Teamtailor](https://www.teamtailor.com/) - ATS Enterprise / Mid Level
 - [BambooHR](https://www.bamboohr.com/) - ATS Enterprise / Mid Level
@@ -23,3 +32,5 @@
 - [Paradox](https://www.paradox.ai/) - Asistente / Agente AI para integrar (enterprise)
 
 #### 🥐 Catering
+
+- [Amelie](https://amelieventos.com/) - Son de zona sur (Adrogue), excelente calidad de catering
