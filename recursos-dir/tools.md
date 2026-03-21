@@ -16,12 +16,12 @@
 
 - [Calendly](https://calendly.com/) - Herramienta de calendario
 - [DuckDuckGo](https://duckduckgo.com/) - Principal buscador para complementar a Google en tus busquedas
+- [Foxclocks](https://chromewebstore.google.com/detail/foxclocks/obcbigljfpgappaaofailjjoabiikckk?hl=es) - Extension de browser para ver horarios en multiples regiones
 
 #### 📹 Social media, video, editor de imagenes
 
 - [Canva](https://www.canva.com/) - Heramienta para disenio grafico
 - [Pixlr](https://pixlr.com/editor/) - Editor online de fotos
-- [Foxclocks](https://chromewebstore.google.com/detail/foxclocks/obcbigljfpgappaaofailjjoabiikckk?hl=es) - Extension de browser para ver horarios en multiples regiones
 - [Itsycal](https://www.mowglii.com/itsycal/) - App para ver calendario simple en Mac
 
 #### 🆒 Otras
