@@ -6,3 +6,5 @@
 - [AWS Girls Argentina](https://linktr.ee/awsgirlsargentina) - Hacen eventos y estan activas en comunidades
 - [La Crypta](https://lacrypta.ar/en) - Comunidad de crypto
 - [Mujeres en Crypto](https://x.com/mujeresencrypto/) - Comunidad de mujeres en Crypto
+- [Fedora Mexico](https://www.meetup.com/fedora-mexico/) - Comunidad de usuarios de Fedora y open source
+- [Python Argentina](https://www.python.org.ar/) - Comunidad y asociación civil de Python en Argentina

@@ -16,7 +16,7 @@ Todas las herramientas, links y recursos en este repo son recomendados y contrib
 
 ---
 
-## 📓 >> [Blogs de reclutamiento](/recursos-dir/blogs.md)
+## 📓 >> [Blogs, artículos y guías de reclutamiento](/recursos-dir/blogs.md)
 
 ## 📖 >> [Cursos, libros y otros recursos](recursos-dir/cursos.md)
 
