@@ -38,6 +38,4 @@ Todas las herramientas, links y recursos en este repo son recomendados y contrib
 
 ---
 
-# Cómo contribuir
-
-Si sabes usar Git / Github, sentite libre de contribuir con un PR o abrir un issue. Sino, podes contactar a alguien de la comunidad en Slack para subir tu contribucion manualmente 😀
+# Queres contribuir? >> [Opciones para aportar a nuestra wiki 🌱](./CONTRIBUTING.md)
