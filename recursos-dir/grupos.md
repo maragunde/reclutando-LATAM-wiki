@@ -8,3 +8,4 @@
 - [Mujeres en Crypto](https://x.com/mujeresencrypto/) - Comunidad de mujeres en Crypto
 - [Fedora Mexico](https://www.meetup.com/fedora-mexico/) - Comunidad de usuarios de Fedora y open source
 - [Python Argentina](https://www.python.org.ar/) - Comunidad y asociación civil de Python en Argentina
+- [Meshtastic Arg](https://t.co/9DNF4QvV4a) - Grupo de Telegram de la comunidad de Mesh en Argentina (perfiles de telecomunicacion / maker / mobile) - Link a la [Web de Mesh](https://mesharg.com.ar/)
