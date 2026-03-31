@@ -11,6 +11,9 @@
 
 - [Recruit'em X-Ray search](https://recruitin.net/) - Herramienta web para buscar perfiles en LinekdIn
 - [Recruitment Geek](https://recruitmentgeek.com/tools/linkedin#gsc.tab=0) - Herramienta web para buscar perfiles
+- [Layoffs.fyi](https://layoffs.fyi/) - Noticias y stats de Layoffs (mostly US)
+- [TrueUp](https://www.trueup.io/layoffs) - Noticias y stats de Layoffs (mostly US)
+- [Comprehensive.io](https://app.comprehensive.io/benchmarking/postings) - Pagina de benchmarks de job posting y rangos salariales (US focus)
 
 #### ⌛ Herramientas de productividad y utilidades
 
