@@ -10,4 +10,4 @@
 - [Python Argentina](https://www.python.org.ar/) - Comunidad y asociación civil de Python en Argentina
 - [Meshtastic Arg](https://t.co/9DNF4QvV4a) - Grupo de Telegram de la comunidad de Mesh en Argentina (perfiles de telecomunicacion / maker / mobile) - Link a la [Web de Mesh](https://mesharg.com.ar/)
 - [Data Engineering Costa Rica](https://luma.com/data-engineering-cr) - La primera comunidad de Data Engineering en Costa Rica. Meetups mensuales para engineers que trabajan con datos a escala.
-- [Testing UY](https://testinguy.org/) - Comunidad de Testing en UY. Organizan eventos y meetups
+- [Testing UY](https://testinguy.org/) - Comunidad de Testing en UY. Organizan eventos y meetups.

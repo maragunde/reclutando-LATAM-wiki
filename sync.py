@@ -21,11 +21,11 @@ def get_auth_header():
     user = os.environ['WP_USER']
     password = os.environ['WP_APP_PASSWORD']
     token = base64.b64encode(f"{user}:{password}".encode()).decode()
-    return {'Authorization': f'Basic {token}', 'Content-Type': 'application/json'}
+    return {'Authorization': f'Basic {token}'}
 
 def sync():
     wp_url = os.environ['WP_URL']
-    headers = get_auth_header()
+    headers = get_auth_header()  # remove Content-Type from here
 
     for file_path, post_id in FILE_TO_POST_ID.items():
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -36,7 +36,7 @@ def sync():
         response = requests.post(
             f"{wp_url}/wp-json/wp/v2/pages/{post_id}",
             headers=headers,
-            json={'content': html_content}
+            json={'content': html_content}  # ← keep json= but fix the auth header
         )
 
         print(f"Updated page {post_id} ({file_path}): {response.status_code}")
