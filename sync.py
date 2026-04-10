@@ -26,10 +26,6 @@ def sync():
     wp_url = os.environ['WP_URL'].rstrip('/')
     headers = get_auth_header()
 
-    # Test auth first with a simple GET before doing anything
-    test = requests.get(f"{wp_url}/wp-json/wp/v2/users/me", headers=headers)
-    print(f"Auth test: {test.status_code} - {test.text[:200]}")
-
     for file_path, post_id in FILE_TO_POST_ID.items():
         with open(file_path, 'r', encoding='utf-8') as f:
             md_content = f.read()
