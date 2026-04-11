@@ -19,7 +19,7 @@
 
 - [Calendly](https://calendly.com/) - Herramienta de calendario
 - [DuckDuckGo](https://duckduckgo.com/) - Principal buscador para complementar a Google en tus busquedas
-- [Foxclocks](https://chromewebstore.google.com/detail/foxclocks/obcbigljfpgappaaofailjjoabiikckk?hl=es) - Extension de browser para ver horarios en multiples regiones
+- [Foxclocks](https://chromewebstore.google.com/detail/foxclocks/obcbigljfpgappaaofailjjoabiikckk?hl=es) - Extension de browser para ver horarios en multiples regiones.
 
 #### 📹 Social media, video, editor de imagenes
 
