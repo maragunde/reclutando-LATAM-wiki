@@ -2,3 +2,4 @@
 
 - [Beamery Blog](https://blog.beamery.com/) - Blog del CRM enterprise Beamery
 - [SocialTalent Blog](https://www.socialtalent.com/blog) - Blog de la tool enterprise Social Talent.
+- [El blog de mariano](https://www.mariano.com) - Blog de ejemplo que me gusto mucho
