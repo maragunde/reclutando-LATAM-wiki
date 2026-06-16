@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - "recursos-dir/**.md"
-      - "recursos-dir/pdfreports/**"
 
 jobs:
   sync:
