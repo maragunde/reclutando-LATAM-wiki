@@ -111,6 +111,32 @@ def get_auth_header():
     token = base64.b64encode(f"{user}:{password}".encode()).decode()
     return {'Authorization': f'Basic {token}'}
 
+def test_wordpress_connection(wp_url, headers):
+    """Test if we can connect to WordPress and if user has proper permissions."""
+    try:
+        # Test basic connection
+        response = requests.get(f"{wp_url}/wp-json/", headers=headers, timeout=5)
+        print(f"✅ WordPress REST API accessible: {response.status_code}")
+        
+        # Test authentication
+        response = requests.get(f"{wp_url}/wp-json/wp/v2/users/me", headers=headers, timeout=5)
+        if response.status_code == 200:
+            user_info = response.json()
+            print(f"✅ Authenticated as: {user_info.get('name')}")
+            caps = user_info.get('capabilities', {})
+            if caps.get('upload_files'):
+                print(f"✅ User has upload_files capability")
+            else:
+                print(f"⚠️  User may NOT have upload_files capability")
+        else:
+            print(f"❌ Authentication failed: {response.status_code}")
+            print(f"   Response: {response.text[:200]}")
+        
+        return response.status_code == 200
+    except Exception as e:
+        print(f"❌ Connection error: {e}")
+        return False
+
 def extract_pdf_paths(md_content):
     """Extract all PDF file paths from markdown content."""
     # Match patterns like ./pdfreports/filename.pdf or [text](./pdfreports/filename.pdf)
@@ -128,29 +154,45 @@ def upload_pdf_to_wordpress(wp_url, headers, local_path):
         print(f"  ❌ PDF file not found: {local_path}")
         return None
     
+    filename = os.path.basename(local_path)
+    
     try:
+        # Read file content
         with open(local_path, 'rb') as f:
-            files = {'file': f}
-            # Get filename from path
-            filename = os.path.basename(local_path)
-            
-            response = requests.post(
-                f"{wp_url}/wp-json/wp/v2/media",
-                headers=headers,
-                files=files,
-                data={'title': filename}
-            )
+            file_content = f.read()
+        
+        # Create headers for file upload (must not include Content-Type for multipart)
+        upload_headers = headers.copy()
+        
+        # Upload file
+        files = {'file': (filename, file_content, 'application/pdf')}
+        response = requests.post(
+            f"{wp_url}/wp-json/wp/v2/media",
+            headers=upload_headers,
+            files=files
+        )
+        
+        print(f"  📤 Upload response for {filename}: {response.status_code}")
         
         if response.status_code in [200, 201]:
-            media_url = response.json().get('source_url')
-            pdf_upload_cache[local_path] = media_url
-            print(f"  ✅ Uploaded {filename}: {media_url}")
-            return media_url
+            response_data = response.json()
+            media_url = response_data.get('source_url')
+            if media_url:
+                pdf_upload_cache[local_path] = media_url
+                print(f"  ✅ Uploaded {filename}: {media_url}")
+                return media_url
+            else:
+                print(f"  ⚠️  File uploaded but no source_url in response: {response_data}")
+                return None
         else:
-            print(f"  ❌ Failed to upload {filename}: {response.status_code} - {response.text}")
+            error_msg = response.text[:500] if response.text else "No error details"
+            print(f"  ❌ Failed to upload {filename}: HTTP {response.status_code}")
+            print(f"     Error: {error_msg}")
             return None
     except Exception as e:
-        print(f"  ❌ Error uploading {local_path}: {e}")
+        print(f"  ❌ Error uploading {local_path}: {type(e).__name__}: {e}")
+        import traceback
+        print(f"     Traceback: {traceback.format_exc()[:200]}")
         return None
 
 def replace_pdf_paths_with_urls(html_content, pdf_urls_map):
@@ -164,6 +206,13 @@ def replace_pdf_paths_with_urls(html_content, pdf_urls_map):
 def sync():
     wp_url = os.environ['WP_URL'].rstrip('/')
     headers = get_auth_header()
+    
+    print(f"🔗 Syncing to: {wp_url}\n")
+    
+    # Test WordPress connection first
+    if not test_wordpress_connection(wp_url, headers):
+        print("\n❌ Cannot proceed - WordPress connection failed")
+        return
 
     for file_path, post_id in FILE_TO_POST_ID.items():
         with open(file_path, 'r', encoding='utf-8') as f:
