@@ -33,4 +33,4 @@
 - [Mailinator](https://www.mailinator.com/) - Crear emails temporales para pruebas
 - [Travelscope](https://www.markuslerner.com/travelscope/) - Worldwide Visa check.
 - [Answer The Public](https://answerthepublic.com/) - Explorar keywords, SEO y Google searches
-- [Textio](https://textio.com/) - Gramatica, formato, revison de textos
+- [Textio](https://textio.com/) - Gramatica, formato, revison de textos muy util
